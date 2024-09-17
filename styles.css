@@ -39,10 +39,21 @@ main {
     color: black;
     font-size: 20px;
     font-weight: 500;
+    position: relative;
 }
 
 .navbackg ul li a:hover {
-    color: #fcfafa;
+    color: white;
+}
+
+.navbackg ul li a:hover::after {
+    content: '🍣';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
 }
 
 /* Hamburger Menu */
