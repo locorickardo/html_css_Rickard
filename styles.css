@@ -199,6 +199,15 @@ main {
     margin-bottom: 5vh;
 }
 
+.background-container {
+    background-image: url('/images/sushi-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2vh 0;
+    position: relative;
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
