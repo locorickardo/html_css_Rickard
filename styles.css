@@ -1,0 +1,96 @@
+/* General Body Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar Styling */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2vh;
+    margin-right: 4vh;
+    margin-top: .5vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li :hover {
+    color: #fcfafa;
+}
+
+/* NavBar Background Styling (div) */
+.navbackg {
+    background-color: #a4b8c4;
+    width: 100vw;
+    height: 4vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Main Content Section Styling - Welcome Text */
+#welcotext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-wrap:wrap;
+    margin-top: 7vh;
+}
+
+#welcotext img {
+    margin-top: 1vw;
+}
+
+#welcotext h1 {
+    text-align: center;
+}
+
+/* Footer Styling */
+.footerp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a4b8c4;
+    width: 100vw;
+    padding: 1vh 2vh;
+    box-sizing: border-box;
+    height: auto;
+    position: fixed; /* Relative positioning by default */
+    bottom: 0;
+    left: 0;
+}
+
+.footerp p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    max-width: 50%;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 980px) {
+    .footerp {
+        position: relative; /* Footer appears after content on smaller screens */
+    }
+
+    /* Adjustments to ensure content doesn't get cut off */
+    #welcotext {
+        margin-bottom: 10vh; /* Adds space before footer */
+    }
+}
