@@ -1,3 +1,5 @@
+/* ## 1 Home Page Section */
+
 /* General Body Styling */
 html, body {
     margin: 0;
@@ -183,4 +185,44 @@ main {
 
 .dark-mode .footerp {
     background-color: #333;
+}
+
+
+/* ## 2 About Page Section */
+#about-section {
+    text-align: center;
+    margin: 10vh auto;
+}
+
+#about-section h1 {
+    font-size: 28px;
+    margin-bottom: 5vh;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 1vh;
+    row-gap: 2vh;
+    justify-content: center;
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team-member p {
+    margin-top: 1vh;
+    font-size: 18px;
+    font-weight: bold;
 }
